@@ -1,6 +1,6 @@
 <?php
 
-namespace ArtinCMS\FAQ\Models;
+namespace Hamahang\FAQ\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -16,7 +16,7 @@ class Faq extends Model
 
     public function tags()
     {
-        return $this->morphToMany('ArtinCMS\LTS\Models\Tag' , 'tagable','lts_tagables','tagable_id','tag_id')->withPivot('type')->withTimestamps() ;
+        return $this->morphToMany('Hamahang\LTS\Models\Tag' , 'tagable','lts_tagables','tagable_id','tag_id')->withPivot('type')->withTimestamps() ;
     }
 
 }

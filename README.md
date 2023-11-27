@@ -13,15 +13,15 @@ Laravel 5.5|5.6
 
 # Installation
 <h3>Quick installation</h3> 
-<div class="highlight highlight-source-shell"><pre>composer require artincms/laravel_faq</pre></div>
+<div class="highlight highlight-source-shell"><pre>composer require hamahang/laravel_faq</pre></div>
 <h6>publish vendor</h6>
  <div class="highlight highlight-text-html-php"><pre>
- $ php artisan vendor:publish --provider="ArtinCMS\FAQ\FAQServiceProvider" --force
+ $ php artisan vendor:publish --provider="Hamahang\FAQ\FAQServiceProvider" --force
 </pre> </div>
 this package use laravel tagable system for use this package you should 
 publish laravel tagable system with bellow command
 <div class="highlight highlight-text-html-php"><pre>
- $ php artisan vendor:publish --provider="ArtinCMS\LTS\LTSServiceProvider" --force
+ $ php artisan vendor:publish --provider="Hamahang\LTS\LTSServiceProvider" --force
 </pre> </div>
 <h6>migrate tabales</h6>
 <div class="highlight highlight-text-html-php"><pre>

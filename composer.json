@@ -1,17 +1,25 @@
 {
-    "name": "artincms/laravel_faq",
-    "description": "Official ArtinCMS.com Laravel Comment Systems Package",
-    "keywords": ["laravel", "ArtinCMS", "Comment System", "storage", "artincms.com","آرتین سی ام اس"],
+    "name": "hamahang/laravel_faq",
+    "description": "Official Hamahang.com Laravel Comment Systems Package",
+    "keywords": ["laravel", "Hamahang", "Comment System", "storage", "hamahang.com","آرتین سی ام اس"],
     "license": "MIT",
     "authors": [
         {
             "name": "Adel.Raheli",
             "email": "adel.raheli@gmail.com"
+        },
+        {
+            "name": "Faramarz Sadeghi",
+            "email": "faramarz.sadeghi89@gmail.com"
+        },
+        {
+            "name": "Mostafa Sharafi",
+            "email": "mostafasharafi.dev@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "ArtinCMS\\FAQ\\": "src/"
+            "Hamahang\\FAQ\\": "src/"
         },
         "files": [
             "src/Helpers/Functions/Faq.php"
@@ -20,12 +28,12 @@
     },
     "require": {
         "yajra/laravel-datatables-oracle": ">=9.0",
-        "artincms/laravel_tagable": "dev-master"
+        "hamahang/laravel_tagable": "dev-master"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ArtinCMS\\FAQ\\FAQServiceProvider"
+                "Hamahang\\FAQ\\FAQServiceProvider"
             ]
         }
     }

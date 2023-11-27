@@ -1,6 +1,6 @@
 <?php
 
-namespace ArtinCMS\FAQ;
+namespace Hamahang\FAQ;
 
 use Illuminate\Support\ServiceProvider;
 

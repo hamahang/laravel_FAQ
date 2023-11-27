@@ -1,5 +1,5 @@
 <?php
-namespace ArtinCMS\FAQ;
+namespace Hamahang\FAQ;
 use Illuminate\Support\Facades\Facade;
 
 class FAQFacade extends Facade

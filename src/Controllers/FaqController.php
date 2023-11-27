@@ -1,10 +1,10 @@
 <?php
 
-namespace ArtinCMS\FAQ\Controllers;
+namespace Hamahang\FAQ\Controllers;
 
-use ArtinCMS\FAQ\Models\Faq;
-use ArtinCMS\LTS\Models\Tag;
-use ArtinCMS\LTS\Models\Tagable;
+use Hamahang\FAQ\Models\Faq;
+use Hamahang\LTS\Models\Tag;
+use Hamahang\LTS\Models\Tagable;
 use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\Auth;
 use Validator;
@@ -289,7 +289,7 @@ class FaqController extends Controller
             where('is_active','1')->
             orderBy('order','asc')->get();
         $filters = Tag::with(['faqs' =>function($e){
-            $e->where('tagable_type','ArtinCMS\FAQ\Models\Faq');
+            $e->where('tagable_type','Hamahang\FAQ\Models\Faq');
         }])->get();
         $result['items']=$faq;
         $result['filters']=$filters;

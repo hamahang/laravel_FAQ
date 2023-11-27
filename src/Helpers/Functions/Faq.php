@@ -106,10 +106,10 @@ function FAQ_GetDecodeId($id, $route = false)
 
 function createTemplate($lang_id)
 {
-    $items = \ArtinCMS\FAQ\Models\Faq::with('tags')->where('lang_id',$lang_id)->
+    $items = \Hamahang\FAQ\Models\Faq::with('tags')->where('lang_id',$lang_id)->
     where('is_active','1')->
     orderBy('order','asc')->get();
-    $filters = \ArtinCMS\LTS\Models\Tag::with('faqs')->where('lang_id',$lang_id)->get();
+    $filters = \Hamahang\LTS\Models\Tag::with('faqs')->where('lang_id',$lang_id)->get();
     $result= view("laravel_faq::frontend.faq", compact('items','filters'))->render();
     return $result ;
 }
