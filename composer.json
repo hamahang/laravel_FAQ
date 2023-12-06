@@ -28,7 +28,7 @@
     },
     "require": {
         "yajra/laravel-datatables-oracle": ">=9.0",
-        "hamahang/laravel_tagable": "1.0.0.*"
+        "hamahang/laravel_tagable": "1.0.*"
     },
     "extra": {
         "laravel": {
